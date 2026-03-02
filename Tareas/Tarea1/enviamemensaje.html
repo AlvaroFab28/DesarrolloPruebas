@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Enviame un Mensaje </title>
+    <link rel = "stylesheet" href = "css/estilo.css">
 </head>
 <body>
+    <div class="contenedor">
     <h1> Para estar en Contacto </h1>
-    <p>Te gustó lo que leíste, compartimos algún interés o simplemente querés hablar de algo un rato? Como aún no aprendí a hacer formularios en la materia, te dejo mis datos acá abajo para que me hables. :D </p>
+    <p>Te gustó lo que leíste, compartimos algún interés o simplemente querés hablar de algo un rato? Como te dije antes, no sabía hacer formularios. Pero... ya me puse a investigar y armé este! (O al menos hice el intento). Escribime por acá... :D </p>
 
-    <h2>Mis vías de comunicación</h2>
-    <table border="1">
-        <tr>
-            <th>Método</th>
-            <th>Detalle</th>
-        </tr>
-        <tr>
-            <td>Correo Electrónico</td>
-            <td> alvarofabianvillenam@gmail.com </td>
-        </tr>
-        <tr>
-            <td>Redes Sociales</td>
-            <td><a href="https://github.com/AlvaroFab28">Mi perfil de GitHub</a></td>
-        </tr>
-    </table>
-    <img src="images/mensaje.png" alt="Imagen mensaje" title="Mensaje" width="150px">
-    <a href="yo.html"> volver al inicio </a>
+    <form action="#" method="get" class="formulario">
+        <label for="nombre">Tu Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+
+        <label for="correo">Tu Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+        <label for="mensaje">Tu Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí acá lo que quieras..." required></textarea>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+    </form>
+
+    <img src="images/mensaje.png" alt="Imagen mensaje" title="Mensaje" width="150px" class="img-centrada">
+    <a href="yo.html" class="btn"> volver al inicio </a>
+    </div>
 </body>
 </html>

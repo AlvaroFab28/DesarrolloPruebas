@@ -1,0 +1,132 @@
+/* limpieza inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fondo degradado */
+body {
+    background: linear-gradient(120deg, #a1fde7 0%, #fbc2f9 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    color: #2d3436;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* una hoja blanca*/
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 40px;
+    border-radius: 20px;
+    border-top: 6px solid #f34f4f; /* Una franja de color arriba */
+}
+
+/* Títulos*/
+h1 {
+    color: #d63031;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #026cbd;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #74b9ff; /* Línea gruesa abajo */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, li {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* clases */
+.resaltado {
+    background-color: #ffeaa7;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #d63031; 
+}
+
+.img-centrada {
+    display: block;
+    margin: 25px auto;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0984e3;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* Tablas*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden; /* Para que las esquinas de la tabla sigan redondas */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dfe6e9;
+}
+
+th {
+    background-color: #74b9ff;
+    color: white;
+    font-size: 18px;
+}
+
+/* --- ESTILOS DEL FORMULARIO --- */
+.formulario {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.formulario label {
+    display: block; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input, 
+.formulario textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 2px solid #dfe6e9; 
+    border-radius: 8px; 
+    font-size: 16px;
+}
